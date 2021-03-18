@@ -1,0 +1,124 @@
+.ordering-wrapper {
+    transition: transform 0.5s ease-in;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+    transform: translateX(600px);
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+    z-index: 10;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.ordering-wrapper.open {
+    transform: translateX(0);
+}
+.ordering-wrapper i {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 30px;
+}
+
+.ordering {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.ordering > div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.ordering div * {
+    margin: 5px 0;
+}
+.ordering label {
+    font-size: 20px;
+    font-weight: 500;
+}
+.ordering input {
+    margin: 10px 0;
+    width: 400px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+.ordering ul {
+    list-style: none;
+    padding-inline-start: 0;
+}
+.ordering ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ordering ul li input {
+    width: 15px;
+}
+
+.ordering textarea {
+    resize: none;
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+.ordering button {
+    border: none;
+    width: 400px;
+    padding: 15px 30px;
+    background-color: rgba(123, 223, 86, 0.856);
+    font-weight: 700;
+}
+.ordering .coment button {
+    padding: 5px;
+    width: 100px;
+    background: rgb(0, 255, 34);
+}
+.ordering button:disabled {
+    background-color: rgba(123, 223, 86, 0.37);
+    color: #000000;
+}
+
+.ordering input.error {
+    border: 2px solid rgba(255, 0, 0, 1);
+}
+
+@media (max-width: 755px) {
+    .ordering-wrapper {
+        width: 400px;
+    }
+    .ordering input,
+    .ordering textarea {
+        width: 300px;
+    }
+    .ordering-wrapper i {
+        font-size: 20px;
+    }
+    .ordering button {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .ordering-wrapper {
+        width: 250px;
+    }
+    .ordering input,
+    .ordering textarea {
+        width: 200px;
+    }
+    .ordering h2,
+    .ordering-wrapper i {
+        font-size: 15px;
+    }
+}

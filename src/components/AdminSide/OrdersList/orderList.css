@@ -1,0 +1,100 @@
+.ordersList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ordersList .order,
+.ordersList .acceptedOrders {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 0;
+    padding: 30px;
+}
+.ordersList .order {
+    color: #fff;
+}
+.orders,
+.acceptedOrders {
+    margin: 80px 30px 0 30px;
+}
+.orders .order span,
+.orders .acceptedOrders span {
+    font-size: 25px;
+    font-weight: 600;
+}
+.orders .order a,
+.orders .acceptedOrders a {
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: #000;
+    background-color: #fff;
+}
+.ordersList .order {
+    border: 2px solid #6e7ae7;
+    background-color: #6e7ae7;
+}
+
+.orders .acceptedOrders {
+    background-color: #b9b9b9;
+}
+@keyframes swing {
+    15% {
+        -webkit-transform: translateX(9px);
+        transform: translateX(9px);
+    }
+    30% {
+        -webkit-transform: translateX(-9px);
+        transform: translateX(-9px);
+    }
+    40% {
+        -webkit-transform: translateX(6px);
+        transform: translateX(6px);
+    }
+    50% {
+        -webkit-transform: translateX(-6px);
+        transform: translateX(-6px);
+    }
+    65% {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.order.swing {
+    -webkit-animation: swing 0.8s ease;
+    animation: swing 0.8s ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 9999;
+}
+@media (max-width: 500px) {
+    .ordersList .order,
+    .ordersList .acceptedOrders {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin: 15px 0;
+        padding: 10px;
+    }
+    .orders .order a,
+    .orders .acceptedOrders a {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .orders .order span,
+    .orders .acceptedOrders span {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .ordersList h1 {
+        font-size: 20px;
+    }
+}

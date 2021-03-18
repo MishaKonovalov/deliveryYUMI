@@ -1,0 +1,63 @@
+section.orderDatails {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #4754cf;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    overflow: auto;
+}
+.orderDatailsWrapper {
+    margin: 0 50px;
+    padding: 75px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.orderDatailsWrapper ol {
+    line-height: 25px;
+    padding: 0;
+}
+.orderDatails button.orderDatailsButton {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    width: 300px;
+    padding: 15px 0;
+    align-self: center;
+    background-color: #0affe2;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 500;
+    transition: transform 0.1s ease-in;
+}
+.orderDatails .orderDatailsButton:active {
+    transform: translateY(5px);
+}
+.loading {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+@media (max-width: 970px) {
+    section.orderDatails {
+        padding: 15px;
+    }
+    .orderDatailsWrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 15px;
+    }
+    .orderDatails button.orderDatailsButton {
+        width: 150px;
+    }
+    .orderDatailsWrapper h2 {
+        font-size: 20px;
+    }
+}

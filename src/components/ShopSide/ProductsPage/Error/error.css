@@ -1,0 +1,32 @@
+.error {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.error .massage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.error .back {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    width: 200px;
+}
+.error span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.error i {
+    font-size: 150px;
+    color: rgb(150, 0, 0);
+}
+.error .home {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    cursor: pointer;
+}

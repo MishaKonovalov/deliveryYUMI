@@ -1,0 +1,48 @@
+.login {
+    background-color: rgb(240, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login .formWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.login .formWrapper img {
+    margin-bottom: 30px;
+    width: 70px;
+    align-self: center;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 24px 46px;
+    background-color: #fff;
+}
+.loginForm > * {
+    margin: 5px 15px;
+}
+.loginForm input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px rgb(53, 53, 53) solid;
+}
+.loginForm button {
+    margin-top: 15px;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(32, 179, 68);
+    border: none;
+    border-radius: 5px;
+}
+.loginForm button:hover {
+    background-color: rgba(32, 179, 68, 0.5);
+}
+@media (max-width: 482px) {
+    .loginForm input {
+        width: 200px;
+    }
+}

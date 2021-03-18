@@ -1,0 +1,115 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 0 auto;
+    height: 100vh;
+    background: url(./background.jpg) no-repeat center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a .logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 11111;
+}
+
+.cart i {
+    align-items: center;
+    font-size: 23px;
+    font-weight: 400;
+    list-style: none;
+    position: fixed;
+    color: rgb(255, 187, 0);
+    top: 15px;
+    right: 15px;
+    transition: right 0.4s ease-in;
+    z-index: 100;
+    max-width: 100px;
+    cursor: pointer;
+}
+.cart span {
+    color: rgb(151, 36, 36);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+i.open {
+    right: 530px;
+}
+.title {
+    margin: 0 auto;
+}
+.title h1 {
+    color: #ffff;
+    font-size: 45px;
+    font-weight: normal;
+}
+header .arrow {
+    margin-top: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    transition: transform 0.1s ease-in;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: translateY(10px);
+}
+@media (max-width: 1300px) {
+    .header {
+        height: 80vh;
+    }
+}
+@media (max-width: 755px) {
+    .header {
+        height: 50vh;
+    }
+    .cart i {
+        font-size: 15px;
+    }
+    a .logo img {
+        width: 25px;
+        height: 25px;
+    }
+    i.open {
+        right: 340px;
+    }
+}
+
+@media (max-width: 500px) {
+    .title h1 {
+        font-size: 25px;
+    }
+    header .arrow {
+        margin-top: 10px;
+        font-size: 20px;
+        width: 200px;
+    }
+    .cart span {
+        font-size: 16px;
+    }
+    i.open {
+        right: 220px;
+    }
+    a .logo {
+        top: 10px;
+        left: 10px;
+    }
+}

@@ -1,0 +1,156 @@
+.stopList {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.stopList i {
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    color: #6e7ae7;
+    font-size: 25px;
+    transition: all 0.22s ease-in;
+}
+.stopList i.open {
+    left: 185px;
+}
+.stopList .leftWrapper {
+    width: 180px;
+    position: fixed;
+    top: 60px;
+    left: -180px;
+    bottom: 0;
+    background-color: #1c1e2c;
+    color: #fff;
+    transition: all 0.22s ease-in;
+    overflow: auto;
+}
+.stopList .leftWrapper.open {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    left: 0;
+}
+.sideBar {
+    z-index: 9;
+}
+.rightWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+.stopList ul {
+    list-style: none;
+    padding: 0;
+}
+.sideBar ul li {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+.sideBar h1 {
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+.searchPanel {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+}
+.searchPanel input {
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 30px;
+    width: 500px;
+    border: 2px solid #6e7ae7;
+    outline: none;
+}
+.rightWrapper .itemsList li {
+    max-width: 650px;
+    border: 3px solid #6e7ae7;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.rightWrapper .itemsList li span {
+    font-weight: 500;
+}
+.rightWrapper .itemsList li button {
+    padding: 5px;
+    background-color: rgb(184, 53, 53);
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.rightWrapper li.inStopList {
+    border: 2px solid rgb(255, 0, 0);
+}
+.rightWrapper .btn {
+    padding: 10px 25px;
+    border: none;
+    background-color: rgb(184, 53, 53);
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.2s transform ease-in;
+    color: #fff;
+}
+.rightWrapper .btn:hover {
+    transform: scale(1.1);
+}
+.stopList .leftWrapper::-webkit-scrollbar {
+    width: 0px;
+}
+@media (max-width: 763px) {
+    .searchPanel input {
+        width: 300px;
+    }
+    .rightWrapper .itemsList li {
+        width: 300px;
+    }
+    .sideBar ul li {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 5px;
+        cursor: pointer;
+    }
+    .sideBar h1 {
+        font-size: 16px;
+    }
+    .searchPanel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+    }
+}
+@media (max-width: 386px) {
+    .rightWrapper .itemsList li span {
+        font-weight: 400;
+        font-size: 13px;
+    }
+    .searchPanel input {
+        width: 250px;
+    }
+    .rightWrapper .itemsList li {
+        width: 250px;
+    }
+}

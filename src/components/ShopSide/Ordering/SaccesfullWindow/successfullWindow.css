@@ -1,0 +1,25 @@
+.successfullWindow {
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.successfullWindow .wrapper-text {
+    border-radius: 15px;
+    padding: 50px;
+    background-color: #ffffff;
+}
+.successfullWindow h1 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 600;
+}

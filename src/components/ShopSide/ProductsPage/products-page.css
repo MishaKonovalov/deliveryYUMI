@@ -1,0 +1,122 @@
+.productPage {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 60px;
+}
+.card {
+    max-width: 350px;
+    margin: 0 10px;
+    transition: all 0.1s ease-in;
+    position: relative;
+}
+
+.card .wrapper-items {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calc-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+.calc-panel .price {
+    color: #d95f5f;
+}
+.card .calc-panel h1.count {
+    font-weight: lighter;
+}
+.card .wrapper-items h1,
+.card .wrapper-items p {
+    text-align: center;
+    margin: 10px 0;
+}
+.card .wrapper-items h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card .wrapper-items img {
+    width: 100%;
+}
+.card .wrapper-items p {
+    font-size: 14px;
+    font-weight: 100;
+}
+.calc-panel .dec,
+.calc-panel .inc,
+.card .add {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    align-items: center;
+}
+.card .add {
+    width: 160px;
+    height: 35px;
+    background-color: rgb(122, 223, 86, 0.59);
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+.add span {
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}
+.card .add:hover {
+    background-color: rgba(122, 223, 86, 0.7);
+    opacity: 1;
+}
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+}
+.card:hover .calc-panel {
+    opacity: 1;
+}
+.card:hover .add {
+    opacity: 1;
+}
+.productPage .inStopList {
+    background-color: rgba(255, 255, 255, 0.61);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+@media (max-width: 350px) {
+    .productPage .inStopList {
+        height: 100px;
+        width: 100px;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    .card .wrapper-items h1,
+    .card .wrapper-items p {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .card .wrapper-items h1 {
+        font-size: 15px;
+    }
+    .card .wrapper-items p {
+        font-size: 13px;
+    }
+}
