@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import axios from 'axios'
 import './stopList.css'
 import AdminHeader from '../AdminHeader/AdminHeader'
 import {
@@ -12,7 +11,6 @@ import {
 } from '../../../store/actions/actionsTypes'
 
 import { connect } from 'react-redux'
-import { Redirect } from 'react-router-dom'
 
 class StopList extends Component {
     async componentDidMount() {
@@ -81,7 +79,7 @@ class StopList extends Component {
         } else {
             clsIcon.push('fa-angle-double-right')
         }
-        console.log(this.props)
+
         return (
             <>
                 <AdminHeader />

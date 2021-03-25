@@ -279,7 +279,7 @@ export const fetchAveryProductsItems = () => {
 export const postStopListItems = (menuList) => {
     const newMenuList = { ...menuList }
     return async (dispatch) => {
-        await axios.patch(
+        await axios.put(
             `https:delivery-ymi-default-rtdb.firebaseio.com/menu/.json`,
             newMenuList
         )
@@ -292,6 +292,7 @@ export const login = ({ email, password }) => {
         password,
         returnSecureToken: true,
     }
+
     return async (dispatch) => {
         await axios
             .post(

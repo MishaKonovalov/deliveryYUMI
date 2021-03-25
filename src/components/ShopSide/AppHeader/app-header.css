@@ -22,7 +22,6 @@ a .logo {
     position: fixed;
     top: 15px;
     left: 15px;
-    z-index: 11111;
 }
 
 .cart i {
@@ -95,7 +94,7 @@ header .arrow {
 
 @media (max-width: 500px) {
     .title h1 {
-        font-size: 25px;
+        font-size: 35px;
     }
     header .arrow {
         margin-top: 10px;
@@ -106,7 +105,7 @@ header .arrow {
         font-size: 16px;
     }
     i.open {
-        right: 220px;
+        right: 85%;
     }
     a .logo {
         top: 10px;

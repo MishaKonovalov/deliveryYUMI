@@ -1,13 +1,8 @@
 import React, { Component } from 'react'
 import AdminHeader from '../AdminHeader/AdminHeader'
 import './orderDatails.css'
-import Spinner from '../../../UI/adminSpinner/adminSpinner'
 import { connect } from 'react-redux'
-import {
-    loadedOrder,
-    acceptOrder,
-    fetchOrder,
-} from '../../../store/actions/actionsTypes'
+import { acceptOrder, fetchOrder } from '../../../store/actions/actionsTypes'
 import { Link, withRouter } from 'react-router-dom'
 
 class OrderDatails extends Component {
