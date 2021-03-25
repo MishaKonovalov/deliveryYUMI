@@ -57,7 +57,7 @@ class App extends Component {
                         <ProductsPage refProp={this.myRef} url="salad" />
                     </Route>
                     {this.renderRoutes()}
-                    <Route path={'/admin/'} exact>
+                    <Route path={'/admin'} exact>
                         {this.props.token ? <AdminApp /> : <Login />}
                     </Route>
                     <Route path={'/admin/:id'} exact>

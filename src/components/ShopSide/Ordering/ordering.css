@@ -111,14 +111,14 @@
 
 @media (max-width: 500px) {
     .ordering-wrapper {
-        width: 250px;
+        width: 100%;
     }
     .ordering input,
     .ordering textarea {
-        width: 200px;
+        width: 100%;
     }
     .ordering h2,
     .ordering-wrapper i {
-        font-size: 15px;
+        font-size: 20px;
     }
 }
