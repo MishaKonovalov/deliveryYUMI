@@ -1,4 +1,7 @@
 Link (https://delivery-ymi.web.app/)
+Authentication
+mail: admin@inbox.ru
+pathword: 000000
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
